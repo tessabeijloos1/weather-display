@@ -16,7 +16,7 @@ Follow these steps to set up the project:
 
 Clone the repository:
 
-bash:  ` git clone git clone https://github.com/tessabeijloos1/test.git `
+bash:  ` git clone https://github.com/tessabeijloos1/test.git `
 
 Navigate to the project directory. Install the required dependencies:
 
