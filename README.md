@@ -32,6 +32,7 @@ Run the following command to start the temperature display application:
 
 ` python weather_app.py `
 
+Then change the server endpoint in the **scheduler.html** file to your server endpoint.
 Open another terminal and cd into the project. Run: 
 
 ` open scheduler.html ` 
