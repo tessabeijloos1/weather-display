@@ -16,7 +16,7 @@ Follow these steps to set up the project:
 
 Clone the repository:
 
-bash:  ` git clone https://github.com/your-username/temperature-display.git `
+bash:  ` git clone git clone https://github.com/tessabeijloos1/test.git `
 
 Navigate to the project directory. Install the required dependencies:
 
