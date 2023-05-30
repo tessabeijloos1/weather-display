@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Weather Update</title>
+  </head>
+  <body>
+    <h1>Weather in Den Bosch:</h1>
+    <p id="temperature">Loading...</p>
+
+    <script>
+      // Function to fetch and update the weather temperature
+      function fetchWeather() {
+        fetch("http://127.0.0.1:5000/") // Send a request to the server endpoint
+          .then((response) => response.json())
+          .then((data) => {
+            // Update the temperature element with the received data
+            document.getElementById("temperature").innerText = `The temperature in ${data.city} is ${data.temperature}°C.`;
+          });
+      }
+
+      // Function to execute fetchWeather every second
+      function updateWeatherEverySecond() {
+        fetchWeather(); // Initial call
+        setInterval(fetchWeather, 1000); // Call fetchWeather every second (1000 milliseconds)
+      }
+
+      // Call the function to start updating the weather
+      document.addEventListener("DOMContentLoaded", function() {
+        updateWeatherEverySecond();
+      });
+    </script>
+  </body>
+</html>
