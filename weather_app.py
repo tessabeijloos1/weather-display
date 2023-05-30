@@ -10,7 +10,7 @@ CORS(app)
 def get_weather():
     city = "Den Bosch"
     url = "https://api.openweathermap.org/data/2.5/weather"
-    api_key = "a1394bff6f7c9a8bcc6e1812bc12d627"
+    api_key = "YOUR_API_KEY"
     url_complete = f"{url}?q={city}&units=metric&appid={api_key}"
     response = requests.get(url_complete)
     data = json.loads(response.text)
